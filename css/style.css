@@ -1,0 +1,169 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	font-family: "Montserrat", sans-serif;
+	background-color: #000;
+}
+
+.container {
+	max-width: 990px;
+	padding: 24px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 32px;
+	margin: 25px 0;
+	letter-spacing: 5px;
+}
+
+.sub-title {
+	color: #aaa;
+	font-size: 12px;
+}
+
+.band-name-yellow {
+	color: yellow;
+}
+
+.cta-btn {
+	text-decoration: none;
+	color: #333;
+	border-radius: 4px;
+}
+
+.social-media-links,
+.cta-btn-container {
+	position: absolute;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.social-media-links {
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -90%);
+	list-style: none;
+}
+
+.social-media-links .social-link {
+	background-color: #111;
+	margin: 12px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-media-links .social-link a {
+	text-decoration: none;
+	color: #aaa;
+}
+
+.cta-btn-container {
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+}
+
+.cta-btn-container .cta-btn {
+	font-size: 24px;
+	margin: 12px;
+	padding: 12px 32px;
+	background-color: #111;
+	color: #ddd;
+}
+
+main {
+	height: 100vh;
+}
+
+/* hero section */
+#hero {
+	background: url("../images/hero.jpg") center/cover rgba(0, 0, 0, 0.5);
+	background-blend-mode: multiply;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+/* about section */
+#about {
+	width: 100%;
+	color: #fff;
+}
+
+#about .about-text {
+	letter-spacing: 0.1px;
+	margin-top: 75px;
+	line-height: 2.1;
+}
+
+#about .members {
+	margin-top: 75px;
+}
+
+#about .members-container {
+	display: flex;
+	flex-flow: row wrap;
+	gap: 15px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#about .member {
+	width: 300px;
+	height: 200px;
+	position: relative;
+}
+
+#about .member-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+}
+
+#about .member .overlay {
+	display: none;
+	opacity: 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 1.5s ease-in-out;
+	border-top: 4px solid yellow;
+	padding: 12px;
+}
+
+#about .member:hover .overlay {
+	display: block;
+	opacity: 1;
+	transition: all 1.5s ease-in-out;
+}
+
+/* footer */
+footer {
+	padding: 50px 0;
+	color: #fff;
+	text-align: center;
+}
+
+footer .title {
+	font-size: 48px;
+}
